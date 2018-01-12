@@ -8,10 +8,10 @@
 	<string>app-store</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.tshang.yueai</key>
-		<string>yueai_dist</string>
-		<key>com.tshang.yueaitest</key>
-		<string>yueai_test_dist</string>
+		<key>BundleID1</key>
+		<string>BundleID1对应的配置文件名</string>
+		<key>BundleID2</key>
+		<string>BundleID2对应的配置文件名</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>iPhone Distribution</string>
