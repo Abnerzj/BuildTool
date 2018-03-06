@@ -25,7 +25,7 @@ build_target=0
 build_mode=Debug
 # 3.打Debug包是否默认发布到蒲公英。如果需要选择发布到fir或蒲公英两个平台，需设置为0。
 build_mode_debug_default_publish_pgy=1
-# 4.更新说明。打Debug包发布到蒲公英是否需要添加更新说明
+# 4.更新说明。打Debug包发布到蒲公英是否需要添加更新说明，为0则直接使用publish_pgy_updatedesc中内容作为更新说明。
 publish_pgy_need_updatedesc=0
 publish_pgy_updatedesc="1.需要添加更新说明 \n 2.需要添加更新说明\n3.需要添加更新说明\n"
 # 5.项目是否使用到cocoaPod，没使用cocoaPod需设置为0
