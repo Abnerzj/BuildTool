@@ -94,7 +94,7 @@ if [ $build_mode == "Debug" ];
 then
 exportOptionsPlistPath=${shellfile_path}/AdHocExportOptions.plist
 # 打Debug包时，删除旧.xcarchive文件
-rm -rf ${project_path}/build/XcarchiveDir/${scheme_name}/${build_mode}/*
+rm -rf ${project_path}/BuildDir/XcarchiveDir/${scheme_name}/${build_mode}/*
 
 # 选择发布类型
 else
@@ -120,14 +120,14 @@ done
     else
     build_mode=Debug
     exportOptionsPlistPath=${shellfile_path}/AdHocExportOptions.plist
-    rm -rf ${project_path}/build/XcarchiveDir/${scheme_name}/${build_mode}/*
+    rm -rf ${project_path}/BuildDir/XcarchiveDir/${scheme_name}/${build_mode}/*
     fi
 fi
 
 # 11.build文件夹路径
-build_path=${project_path}/build/XcarchiveDir/${scheme_name}/${build_mode}/${currentDate}/
-# 导出.ipa文件所在路径:当前根路径/build/IPADir/target名/打包模式/当前时间/ipa等文件
-exportIpaPath=${project_path}/build/IPADir/${scheme_name}/${build_mode}/${currentDate}
+build_path=${project_path}/BuildDir/XcarchiveDir/${scheme_name}/${build_mode}/${currentDate}/
+# 导出.ipa文件所在路径:当前根路径/BuildDir/IPADir/target名/打包模式/当前时间/ipa等文件
+exportIpaPath=${project_path}/BuildDir/IPADir/${scheme_name}/${build_mode}/${currentDate}
 
 # 12.发布到蒲公英的更新说明
 if [ $publish_pgy_need_updatedesc == 1 ];
